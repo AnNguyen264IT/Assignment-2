@@ -1,8 +1,11 @@
 package cacul;
 
 public class cacular {
-	public static int multiply(int a, int b) {
-        return a * b;
+	public static Double divide(int a, int b) {
+		if (b == 0) {
+            throw new IllegalArgumentException("Không thể chia cho 0");
+        }
+        return (double) a / b;
     }
 
   
